@@ -8,7 +8,7 @@
 </head>
      <body>
          <div class="container">
-             <h1>Formulaire</h1>
+             <h1>Formulaire inscription</h1>
              <form action="action.php" class="needs-validation" novalidate>
                  <div class="form-row">
                      <div class="col-md-4 mb-3">
