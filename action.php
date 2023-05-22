@@ -34,6 +34,6 @@ echo "Données insérées avec succès.";
 // Fermer la connexion
 sqlsrv_close($conn);
 // Redirect to index.php
-header("Location: formulaire.php");
+header("Location: index.php");
 exit();
 ?>
