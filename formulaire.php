@@ -6,49 +6,46 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 </head>
-<body>
-
-  <div class="container">
-    <div class="row justify-content-center align-items-center">
-      <h1 class="mb-4">Formulaire</h1>
-
-      <div class="col-sm-8 col-md-6 ">
-        <form action="traitement.php" method="POST">
-          <div class="form-group">
-            <label for="nom">Nom:</label>
-            <input type="text" class="form-control" id="nom" name="nom" required>
-          </div>
-
-          <div class="form-group">
-            <label for="prenom">Prénom:</label>
-            <input type="text" class="form-control" id="prenom" name="prenom" required>
-          </div>
-
-          <div class="form-group">
-            <label for="date_naissance">Date de naissance:</label>
-            <input type="date" class="form-control" id="date_naissance" name="date_naissance" required>
-          </div>
-
-          <div class="form-group">
-            <label>Sexe:</label><br>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" id="sexe_homme" name="sexe" value="homme" required>
-              <label class="form-check-label" for="sexe_homme">Homme</label>
-            </div>
-            <div class="form-check form-check-inline">
-              <input class="form-check-input" type="radio" id="sexe_femme" name="sexe" value="femme" required>
-              <label class="form-check-label" for="sexe_femme">Femme</label>
-            </div>
-          </div>
-          <div class="text-center">
-            <button type="submit" class="btn btn-primary ">Soumettre</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-</body>
+</head>
+     <body>
+         <div class="container">
+             <h1>Formulaires</h1>
+             <form class="needs-validation" novalidate>
+                 <div class="form-row">
+                     <div class="col-md-4 mb-3">
+                         <label for="prenom">Prénom</label>
+                         <input type="text" class="form-control" id="prenom" placeholder="Pierre" required>
+                         
+                     </div>
+                     <div class="col-md-4 mb-3">
+                         <label for="nom">Nom de famille</label>
+                         <input type="text" class="form-control" id="nom" placeholder="Giraud" required>
+                         
+                     </div>
+                     <div class="col-md-4 mb-3">
+                         <label for="pseudo">Pseudo</label>
+                         <input type="text" class="form-control" id="pseudo" placeholder="PierreGird" required>
+                         
+                     </div>
+                 </div>
+                 <div class="form-row">
+                     <div class="col-md-6 mb-3">
+                         <label for="ville">Ville</label>
+                         <input type="text" class="form-control" id="ville" placeholder="Ville" required>
+                     </div>
+                     <div class="col-md-3 mb-3">
+                         <label for="pays">Pays</label>
+                         <input type="text" class="form-control" id="pays" placeholder="Pays" required>
+                         
+                     </div>
+                     <div class="col-md-3 mb-3">
+                         <label for="cp">Code postal</label>
+                         <input type="number" class="form-control" id="cp" placeholder="Code postal" required>
+                         
+                     </div>
+                 </div>
+                 <button class="btn btn-primary" type="submit">Envoyer</button>
+             </form>
+         </div>
+    </body>
 </html>
