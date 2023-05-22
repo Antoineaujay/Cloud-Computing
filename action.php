@@ -21,7 +21,7 @@ if ($conn === false) {
 }
 
 // Requête d'insertion des données
-$sql = "INSERT INTO Utilisateurs (prenom, nom, pseudo, ville, pays, cp) VALUES (?, ?, ?, ?)";
+$sql = "INSERT INTO Utilisateurs (prenom, nom, pseudo, ville, pays, cp) VALUES (?, ?, ?, ?, ?, ?)";
 $params = array($prenom, $nom, $pseudo, $ville, $pays, $cp);
 $stmt = sqlsrv_query($conn, $sql, $params);
 
