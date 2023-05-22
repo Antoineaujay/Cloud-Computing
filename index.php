@@ -18,7 +18,7 @@
                      </div>
                      <div class="col-md-4 mb-3">
                          <label for="nom">Nom de famille</label>
-                         <input type="text" class="form-control" id="nom" name="nom placeholder="Giraud" required>
+                         <input type="text" class="form-control" id="nom" name="nom" placeholder="Giraud" required>
                          
                      </div>
                      <div class="col-md-4 mb-3">
